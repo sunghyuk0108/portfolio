@@ -1,0 +1,206 @@
+* {margin: 0; padding: 0; list-style: none;}
+a {color: inherit; text-decoration: none;}
+html,body {height: 100%; background-color: #fff; font-family: 'Noto Sans KR', sans-serif;}
+body {overflow: hidden;}
+#main_page {width: 100%; height: 100%; background-color: #eee; position: relative;}
+#bg {width: 100%; height: 100%; background: url(../images/editorial1/bg1.png) center no-repeat; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: 1;}
+header {width: 100%; height: 80px; border-bottom: 1px dotted #000; position: relative; top: 0; z-index: 999;}
+#logo {width: 100px; height: 23px; float: left; margin-left: 50px; margin-top: 32px; position: relative; z-index: 998;}
+#logo img {height: 100%; vertical-align: top;}
+#menu {width: 20px; height: 20px; float: right; margin-right: 50px; margin-top: 30px; position: relative;}
+#menu:hover {cursor: pointer;}
+#menu li {width: 100%; height: 2px; background-color: #000; position: absolute; left: 0;}
+#menu li:nth-child(1) {top: 3px; }
+#menu li:nth-child(2) {top: 9px;}
+#menu li:nth-child(3) {top: 15px;}
+
+#menu_popup_box {width: 100%; height: 100%; margin: auto; margin-top: 80px; overflow: hidden; position: relative;}
+
+.menu_box_wrap { display: flex; justify-content: space-between; flex-direction: row;}
+#menu_left_box {height: 100%; position: relative;}
+#menu_popup {width: 100%; height: 100vh; background-color: #666; position: absolute; right: -2000px; top: 0; display: none;}
+#menu_popup_box_line {width: 100%; height: 1px; background-color: #fff;}
+
+#menu_popup_title_text {height: 100px; font-size: 100px; margin-left: 200px; margin-top: 150px; text-transform: uppercase; color: #fff; font-family: 'Lexend Peta', sans-serif; line-height: 100px;}
+#menu_right_box {height: 100%; padding-top: 150px; box-sizing: border-box; position: relative; z-index: 20;}
+#menu_right_box li {width: 100%; margin-bottom: 25px; font-size: 38px; font-weight: 400; text-transform: uppercase; color: #fff; padding-left: 0; font-family: 'Lexend Peta', sans-serif; margin-bottom: 50px; margin-left: 100px;}
+#menu_right_box li:hover a{color: #000; transition:0.3s;}
+#menu_li_img_box {width: 50%; height: 100%; position: absolute; right: 0; top: 0;}
+#menu_li_img_box li {width: 500px; height: auto; margin-left: 50px; position: absolute; display: none; opacity: 0.5; left: 100px;}
+#menu_li_img_box li:nth-child(1) {top: 100px;}
+#menu_li_img_box li:nth-child(2) {top: 200px;}
+#menu_li_img_box li:nth-child(3) {top: 300px;}
+#menu_li_img_box li:nth-child(4) {top: 400px;}
+#menu_li_img_box li img {width: 100%;}
+
+#shop_menu {height: 40px; float: right; text-transform: uppercase; margin-right: 25px; line-height: 40px; margin-top: 20px; overflow: hidden;}
+#shop_menu li { font-size: 14px; font-weight: 500; color: #000; position: relative;}
+#shop_line {width: 0%; height: 2px; background-color: #000; position: absolute; bottom: 8px;}
+
+#brand_ader {width: 200px; height: 100px; border: 1px solid #000; position: fixed; 	left: -201px; bottom: 50px; z-index: 22; color: #fff; background-color: #fff; border: 1px solid blue; text-align: center;}
+#brand_ader h2 {color: #000; font-weight: 500; font-size: 20px; margin-top: 30px; line-height: 20px;}
+#brand_ader h2 span {color: blue; font-weight: 400; font-size: 12px; line-height: 12px;}
+#brand_ader:hover {background-color: blue; border: 1px solid #000; cursor: pointer;}
+#brand_ader:hover h2{color: #fff;}
+#brand_ader:hover h2 span{color: #fff;}
+
+#sns_icons {width: 115px; height: 25px; position: absolute; right: 50px; bottom: 50px; z-index: 23;}
+#sns_icons li {width: 25px; height: 25px; float: left; margin-right: 5px;}
+#sns_icons img {width: 25px; height: 25px;}
+#sns_icons li:hover {transform:scale(1.2);}
+#sns_icons li:nth-child(4) {margin-right: 0px;}
+
+#on_off_fashion_show {width: 600px; height: 100px; background-color: #fff; border: 1px solid blue; position: absolute; left: 0; right: 0; bottom: 50px; margin: auto; text-align: center; z-index: 10;}
+#on_off_fashion_show:hover {background-color: blue; border: 1px solid #fff; transition:0.3s; cursor: pointer;}
+#on_off_fashion_show:hover h3 {color: #fff; transition:0.3s;}
+#on_off_fashion_show h3 {width: 100%; font-size: 30px; line-height: 100px; text-transform: capitalize; font-weight: 400; position: absolute; left: 0; top: 0; z-index: 9; color: #000;}
+
+#audio_box {width: 150px; height: 40px; background-color: #fff; border: 1px solid blue; color: #000; position: absolute; right: 80px; top: 120px; padding: 5px 15px; box-sizing: border-box; z-index: 11;}
+#audio_box:hover {background-color: blue; border: 1px solid #fff; cursor: pointer; transition:0.3s;} 
+#audio_box h4{text-transform: uppercase; line-height: 30px; float: left; font-size: 14px; font-weight: 600;}
+#audio_box:hover h4 {color: #fff; transition:0.3s;}
+#audio_box:hover #audio_move li {background-color: #fff; transition:0.3s;}
+#audio_move{width: 47px; height: 30px; float: right; position: relative;}
+#audio_move li{width: 7px; height: 30px; background-color: blue; float: left; margin-right: 3px; position: absolute; bottom: 0;}
+#audio_move li:first-child{height: 30px; left: 0px;}
+#audio_move li:nth-child(2) {height: 25px; left: 10px;}
+#audio_move li:nth-child(3) {height: 22px; left: 20px;}
+#audio_move li:nth-child(4) {height: 26px; left: 30px;}
+#audio_move li:last-child {margin-right: 0px; height: 20px; left: 40px;}
+
+#show_list {width: 150px; height: 40px; background-color: #fff; border: 1px solid blue; color: #000; position: absolute; right: 250px; top: 120px; text-align: center; line-height: 40px; font-size: 14px; font-weight: 600; text-transform: uppercase; z-index: 3; overflow: hidden;}
+#show_list:hover {cursor: pointer;}
+#show_list li {width: 100%; height: 40px; background-color: #fff; text-align: center; border-top: 1px solid blue;}
+#show_list li:first-child {border-top: none;}
+#show_list li:hover {color: #fff; background-color: blue; transition:0.3s;}
+
+#editorial_wrap{width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 2;}
+
+#editorial_wrap_text_box {width: 1620px; height: 540px; position: absolute; left: 50%; right: 0; top: 0; bottom: 0; margin: auto; margin-left: -810px; text-align: center;}
+#editorial_wrap_text_box h2 {width: 100%; height: 300px; font-size: 100px; text-transform: uppercase; line-height: 150px; margin-top: 50px;}
+/* 패션쇼 중앙에 위치 하게 하려면 l250 ml-400% 줬었음. */
+
+#fashiton_show_left_bt {width: 50px; height: 100%; position: absolute; left: 0; top: 0; background-color: transparent; border: none; font-size: 30px; color: blue;}
+#fashiton_show_left_bt:hover {cursor: pointer;}
+#fashiton_show_right_bt {width: 50px; height: 100%; position: absolute; right: 0; top: 0; background-color: transparent; border: none; font-size: 30px; color: blue;}
+#fashiton_show_right_bt:hover {cursor: pointer;}
+
+#fashiton_show {width: 100%; height: 480px; position: absolute; left: 0; right: 0; top: -50px; bottom: 0; margin: auto; text-align: center; display: none; overflow: hidden; border: 1px solid #000;}
+
+#fashion_show_in_box1 {width: 400%; height: 100%; position: absolute; left: 0; top: 0; box-sizing: border-box;} 
+#fashion_show_in_box1>li {width: 25%; height: 100%; float: left;}
+
+.fashiton_show_box4 {width: 100%; height: 100%;}
+.fashiton_show_box4>li {width: 25%; height: 100%; float: left;  border-right: 1px solid #000; box-sizing: border-box;}
+.fashiton_show_box4>li:last-child {border: none;}
+.fashiton_show_box4>li>div {width: 90%; height: 90%; background-color: #000; margin-top: 5%; margin-left: 5%;}
+/*#fashion_show_in_box1 안에 첫번째 엘아이 안에 첫번째 유엘 안에  1,2,3,4 li 안에 div*/
+#fashion_show_in_box1>li:nth-child(1)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial1/21fw1.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(1)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial1/21fw2.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(1)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial1/21fw3.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(1)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial1/21fw4.jpg) center no-repeat; background-size: cover;}
+    /*#fashion_show_in_box1 안에 두번째 li안에*/
+#fashion_show_in_box1>li:nth-child(2)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial1/21fw5.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(2)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial1/21fw6.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(2)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial1/21fw7.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(2)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial1/21fw8.jpg) center no-repeat; background-size: cover;}
+        /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box1>li:nth-child(3)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial1/21fw9.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(3)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial1/21fw10.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(3)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial1/21fw11.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(3)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial1/21fw12.jpg) center no-repeat; background-size: cover;}
+
+            /*#fashion_show_in_box1 안에 네번째 li안에*/
+#fashion_show_in_box1>li:nth-child(4)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial1/21fw13.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(4)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial1/21fw14.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(4)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial1/21fw15.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box1>li:nth-child(4)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial1/21fw16.jpg) center no-repeat; background-size: cover;}
+
+/* 패션 쇼 인박스 2 시작 */
+#fashion_show_in_box2 {width: 400%; height: 100%; position: absolute; left: 0; top: 0; display: none;}
+#fashion_show_in_box2>li {width: 25%; height: 100%; float: left;}
+
+#fashion_show_in_box2>li:nth-child(1)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial2/21ss1.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(1)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial2/21ss2.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(1)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial2/21ss3.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(1)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial2/21ss4.jpg) center no-repeat; background-size: cover;}
+    /*#fashion_show_in_box1 안에 두번째 li안에*/
+#fashion_show_in_box2>li:nth-child(2)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial2/21ss5.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(2)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial2/21ss6.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(2)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial2/21ss7.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(2)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial2/21ss8.jpg) center no-repeat; background-size: cover;}
+        /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box2>li:nth-child(3)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial2/21ss9.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(3)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial2/21ss10.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(3)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial2/21ss11.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(3)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial2/21ss12.jpg) center no-repeat; background-size: cover;}
+
+            /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box2>li:nth-child(4)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial2/21ss13.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(4)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial2/21ss14.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(4)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial2/21ss15.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box2>li:nth-child(4)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial2/21ss16.jpg) center no-repeat; background-size: cover;}
+    /* 패션 쇼 인박스 2 끝 */
+
+        /* 패션 쇼 인박스 3 시작 */
+#fashion_show_in_box3 {width: 400%; height: 100%; position: absolute; left: 0; top: 0; display: none;} 
+#fashion_show_in_box3>li {width: 25%; height: 100%; float: left;}
+
+#fashion_show_in_box3>li:nth-child(1)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial3/20fw1.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(1)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial3/20fw2.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(1)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial3/20fw3.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(1)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial3/20fw4.jpg) center no-repeat; background-size: cover;}
+    /*#fashion_show_in_box1 안에 두번째 li안에*/
+#fashion_show_in_box3>li:nth-child(2)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial3/20fw5.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(2)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial3/20fw6.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(2)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial3/20fw7.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(2)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial3/20fw8.jpg) center no-repeat; background-size: cover;}
+        /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box3>li:nth-child(3)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial3/20fw9.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(3)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial3/20fw10.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(3)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial3/20fw11.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(3)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial3/20fw12.jpg) center no-repeat; background-size: cover;}
+
+            /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box3>li:nth-child(4)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial3/20fw13.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(4)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial3/20fw14.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(4)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial3/20fw15.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box3>li:nth-child(4)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial3/20fw16.jpg) center no-repeat; background-size: cover;}
+    /* 패션 쇼 인박스 3 끝 */   
+
+        /* 패션 쇼 인박스 2 시작 */
+#fashion_show_in_box4 {width: 400%; height: 100%; position: absolute; left: 0; top: 0; display: none;} 
+#fashion_show_in_box4>li {width: 25%; height: 100%; float: left;}
+
+#fashion_show_in_box4>li:nth-child(1)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial4/20ss1.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(1)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial4/20ss2.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(1)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial4/20ss3.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(1)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial4/20ss4.jpg) center no-repeat; background-size: cover;}
+    /*#fashion_show_in_box1 안에 두번째 li안에*/
+#fashion_show_in_box4>li:nth-child(2)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial4/20ss5.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(2)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial4/20ss6.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(2)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial4/20ss7.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(2)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial4/20ss8.jpg) center no-repeat; background-size: cover;}
+        /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box4>li:nth-child(3)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial4/20ss9.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(3)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial4/20ss10.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(3)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial4/20ss11.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(3)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial4/20ss12.jpg) center no-repeat; background-size: cover;}
+
+            /*#fashion_show_in_box1 안에 세번째 li안에*/
+#fashion_show_in_box4>li:nth-child(4)>ul:nth-child(1)>li:nth-child(1)>div{background: url(../images/editorial4/20ss13.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(4)>ul:nth-child(1)>li:nth-child(2)>div{background: url(../images/editorial4/20ss14.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(4)>ul:nth-child(1)>li:nth-child(3)>div{background: url(../images/editorial4/20ss15.jpg) center no-repeat; background-size: cover;}
+#fashion_show_in_box4>li:nth-child(4)>ul:nth-child(1)>li:nth-child(4)>div{background: url(../images/editorial4/20ss16.jpg) center no-repeat; background-size: cover;}
+    /* 패션 쇼 인박스 2 끝 */
+
+#brand_ader_popup_wrap {width: 100%; height: 100vh; position: fixed; left: 0; top: 0; background-color: #000; z-index: 999; background-color: rgba(0,0,0,0.3); display: none;} 
+#brand_ader_popup {width: 500px; height: 350px; background-color: #fff; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; text-align: center; border: 1px solid blue; overflow: hidden;}
+#brand_ader_popup h2 {width: 100%; height: 30px; color: #000; font-weight: 500; font-size: 30px; line-height: 30px; margin-top: 50px; text-transform: uppercase;}
+#brand_ader_popup p {width: 100%; line-height: 20px; margin-top: 30px; font-size: 14px; padding: 10px 50px; box-sizing: border-box;}
+#brand_ader_popup>button {width: 30px; height: 30px; background-color: blue; color: #fff; position: absolute; right: 10px; top: 10px; text-align: center; text-transform: uppercase;line-height: 30px; border: none; border-radius: 30px;}
+#brand_ader_popup>button:hover{cursor: pointer;}
+#check {width: 100%; height: 30px; margin-top: 30px;}
+#genuine_code{width: 50%; height: 20px; background-color: #fff; border: 1px solid blue;padding: 5px 10px;}
+#check button{width: 50px; height: 32px; border: 1px solid blue; background-color: #fff; color: #000; vertical-align: bottom;}
+#check button:hover {cursor: pointer;}

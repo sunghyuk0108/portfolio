@@ -1,0 +1,85 @@
+/*미디어쿼리 규칙
+규칙1. 미디어쿼리에는 변화하는 값 만 기록한다.
+규칙2. 하나의 속성이 기록되면 다른 조건에도 동일하게 할당한다.
+*/
+/*미디어쿼리 스타일 시트 아래에 해당 스타일 시트 추가해서쓰면됨.*/
+@media all and (min-width:320px) { /* 320~767 모바일 */
+    header {
+        height: 48px;
+    }
+
+    .header_inbox {
+        display: none;
+        width: 100%;
+    }
+
+    .media_header_wrap {
+        display: block;
+    }
+
+    .content_box2 {width: 100%; height: 400px; background: url(../images/hero_iphone13pro_avail__iy77cld0zwii_small_2x.jpeg) center -400px no-repeat;}
+
+    .content h2 {
+        font-size: 32px; 
+        line-height: 32px;
+    }
+    .content h3 {
+        font-size: 19px;
+        line-height: 19px;
+    }
+
+    .content_cho>div>span {font-size: 17px;} 
+} /* 320px 끝 */
+@media all and (min-width:767px) { /*768~1023 태블릿*/
+    header {
+        height: 48px;
+    }
+    
+    .header_inbox {
+        display: block;
+        width: 100%;
+    }
+    
+    .media_header_wrap {
+        display: none;
+    }
+
+    .content_box2 {width: 100%; height: 400px; background: url(../images/hero_iphone13pro_avail__iy77cld0zwii_small_2x.jpeg) center -200px no-repeat; background-size: 734px 548px;}
+
+    .content h2 {
+        font-size: 56px; 
+        line-height: 50px;
+    }
+    .content h3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+} /* 834px 끝 */
+@media all  and (min-width:1024px) { /*1024 태블릿*/
+    header {
+        height: 44px;
+    }
+    
+    .header_inbox {
+        display: block;
+        width: 960px;
+    }
+    
+    .media_header_wrap {
+        display: none;
+    }
+
+    .content_box2 {width: 100%; height: 500px; background: url(../images/hero_iphone13pro_avail__iy77cld0zwii_largetall_2x.jpg) center -250px no-repeat; background-size: 3000px 736px;}
+
+    .content h2 {
+        font-size: 60px; 
+        line-height: 50px;
+    }
+    .content h3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+
+} /* 1024px 끝 */

@@ -1,0 +1,65 @@
+/* 반응형 시작 */
+   /*미디어쿼리 규칙
+ 규칙1. 미디어쿼리에는 변화하는 값 만 기록한다.
+ 규칙2. 하나의 속성이 기록되면 다른 조건에도 동일하게 할당한다.
+ */
+ /*미디어쿼리 스타일 시트 아래에 해당 스타일 시트 추가해서쓰면됨.*/
+ @media all and (min-width:320px) { /* 320~767 모바일 */
+ header{position: fixed;}
+ #logo {height: 20px; margin-left: 25px; margin-top: 32px;}
+ #menu {margin-right: 25px;}
+
+ #sns_icons {width: 95px; height: 20px; right: 15px; bottom: 50px;}
+ #sns_icons li {width: 20px; height: 20px; margin-right: 5px;}
+ #sns_icons img {width: 20px; height: 20px;}
+
+ #brand_ader {width: 100px; height: 50px;}
+ #brand_ader h2 {font-size: 14px; line-height: 14px; margin-top: 10px;}
+
+ #menu_popup_title_text {height: 20px; font-size: 30px; margin-left: 25px; margin-top: 50px; line-height: 20px;}
+ .menu_box_wrap { display: flex; flex-direction: column; justify-content: space-between;}
+ #menu_li_img_box {display: none;}
+ #menu_right_box {padding: 50px 25px;}
+ #menu_right_box li {margin-left: unset; font-size: 24px;}
+
+ }
+
+ @media all and (min-width:768px) { /*768~1023 태블릿*/
+ header{position: fixed;}
+ #logo {width: 100px; height: 23px; margin-left: 50px; margin-top: 32px;}
+ #menu {margin-right: 50px;}
+
+ #sns_icons {width: 115px; height: 25px; right: 15px; bottom: 50px;}
+ #sns_icons li {width: 25px; height: 25px; margin-right: 5px;}
+ #sns_icons img {width: 25px; height: 25px;}
+
+ #brand_ader {width: 200px; height: 100px;}
+ #brand_ader h2 {font-size: 18px; line-height: 18px; margin-top: 32px;}
+
+ #menu_popup_title_text {height: 40px; font-size: 60px; margin-left: 50px; margin-top: 100px; line-height: 40px;}
+ .menu_box_wrap { display: flex; flex-direction: column; justify-content: space-between;}
+ #menu_li_img_box {display: none;}
+ #menu_right_box {padding: 50px 50px;}
+ #menu_right_box li {margin-left: unset; font-size: 24px;}
+
+ }
+
+ @media all and (min-width:1024px) { /*1024 태블릿*/
+ header{position: fixed;}
+ #logo {width: 100px; height: 23px; margin-left: 50px; margin-top: 32px;}
+ #menu {margin-right: 50px;}
+
+ #sns_icons {width: 115px; height: 25px; right: 50px; bottom: 50px;}
+ #sns_icons li {width: 25px; height: 25px; margin-right: 5px;}
+ #sns_icons img {width: 25px; height: 25px;}
+ 
+ #brand_ader {width: 200px; height: 100px;}
+ #brand_ader h2 {font-size: 18px; line-height: 18px; margin-top: 32px;}
+ 
+ #menu_popup_title_text {height: 100px; font-size: 100px; margin-top: 150px; line-height: 100px;}
+ .menu_box_wrap { display: flex; justify-content: space-around; flex-direction: row;}
+ #menu_li_img_box {display: block;}
+ #menu_right_box {padding: 150px 0px;}
+ #menu_right_box li {margin-left: unset; font-size: 38px;}
+/*반응형 하던거 끝*/
+ }

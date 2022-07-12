@@ -1,0 +1,139 @@
+/* 포인트 컬러 #00ff96 background : #000 color : #fff */
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: inherit;}
+body,html{height: 100%; font-family: 'Noto Sans KR', sans-serif;}
+body{background-color: #000;}
+#mouse_pointer {width: 10px; height: 10px; background-color: #00ff96; border-radius: 10px; position: absolute; z-index: 9999; pointer-events: none; transition-timing-function: ease-out; box-shadow: 0 0 10px #00ff96,0 0 20px #00ff96,0 0 30px #00ff96,0 0 40px #00ff96;}
+#intro {width: 100%; height: 100%; background-color: #000; overflow: hidden; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: 9999;}
+#intro>h2 {width: 300px; height: 14px; line-height: 14px; color: #fff; text-transform: uppercase; font-size: 14px; font-weight: 500; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; text-align: center; z-index: 1; opacity: 0.6;}
+#intro_title {width: 100%; height: 20px; position: absolute; left: 0; right: 0; top: 100px; margin: auto; opacity: 0.6;}
+#intro_title h2 {font-size: 20px; line-height: 20px; color: #fff; text-transform: uppercase; font-weight: 500; text-align: center; letter-spacing: 3px;}
+
+#intro_in_portfolio {width: 300px; height: 300px; border: 2px dotted rgba(255,255,255,0.4); border-radius: 300px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+#intro_in_portfolio_box {width: 300px; height: 300px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; border-radius: 300px; border: 1px solid #000; z-index: 2; opacity: 0.6; display: none;}
+#intro_in_portfolio_box:hover {cursor: pointer;}
+.intro_in_portfolio_inbox {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; border-radius: 100%;}
+.intro_in_portfolio_inbox:nth-child(1) {width: 85%; height: 85%; border: 1px solid rgba(255,255,255,1);}
+.intro_in_portfolio_inbox:nth-child(2) {width: 80%; height: 80%; border: 1px solid rgba(255,255,255,0.75);}
+.intro_in_portfolio_inbox:nth-child(3) {width: 75%; height: 75%; border: 1px solid rgba(255,255,255,0.5);}
+
+#intro_text {width: 100%; height: 20px; position: absolute; left: 0; right: 0; bottom: 100px; margin: auto; opacity: 0.6;}
+#intro_text p{font-size: 16px; line-height: 20px; color: #fff; text-transform: uppercase; font-weight: 500; text-align: center;}
+
+#horizontal{width: 50%; height: 100%; position: absolute; left: 100%; top: 0; background-color: #00ff96;}
+
+header{height: 100px; position: fixed; left: 0; right: 0; top: 100px; margin: auto; z-index: 999;}
+#logo {height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; float: left; color: #fff; font-weight: 400;}
+#logo:hover {cursor: pointer; color: #00ff96;}
+
+nav {float: right;}
+#menu {width: 100%; text-align: right;}
+#menu li {height: 25px; font-size: 18px; line-height: 18px; color: #fff; font-weight: 400; text-transform: uppercase; transition:0.3s;}
+#menu li:hover {cursor: pointer; color: #00ff96;}
+
+#sns {width: 200px; height: 18px; font-size: 18px; line-height: 18px; position: absolute; left: 250px; bottom: 100px; z-index: 998; border: none; background: transparent; color: #fff; font-weight: 400; text-transform: uppercase;}
+
+#scroll_down_text {width: 200px; height: 30px; position: absolute; right: 250px; bottom: 100px; z-index: 997; overflow: hidden;}
+#scroll_down_text h3 {color: #fff; font-size: 18px; font-weight: 400; line-height: 18px; float: right; margin-top: 12px;} 
+#samo {width: 0; height: 0; float: left; border-top: 18px solid #00ff96; border-bottom: 18px solid transparent; border-right: 10px solid transparent; border-left: 10px solid transparent;}
+
+#portfolio_main {height: 100%; position: relative; margin: auto; display: none;}
+
+#portfolio_main_text_box {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;overflow: hidden;}
+#bg {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; border-radius: 500px; border: 1px solid #fff; overflow: hidden;}
+#bg_video {height: 100%; overflow: hidden;}
+
+#portfolio_main_text_box h2 {font-weight: 500; color: #fff; text-align: center;} 
+#portfolio_main_text_box h2:nth-child(1) {padding-left: 20%;}
+#portfolio_main_text_box p {height: 18px; line-height: 18px; font-weight: 500; color: #fff; text-align: center; padding-left: 30%;}
+
+#portfolio_wrap {width: 75%; overflow: hidden; margin: auto; display: none;}
+#portfolio_about_me_main_box {width: 1420px; height: 640px; margin: auto; margin-top: 100px; overflow: hidden;}
+
+#portfolio_about_me_main_left_box {width: 1000px; height: 100%; float: left;}
+#portfolio_about_me_main_inbox_top {width: 100%; height: 270px; overflow: hidden;}
+#portfolio_about_me_main_inbox_top p {width: 100%; height: 50px; font-size: 50px; line-height: 50px; font-weight: 400; color: #fff; text-transform: uppercase; margin-top: 50px; opacity: 0;}
+#portfolio_about_me_main_inbox_top h3 {width: 100%; height: 50px; font-size: 50px; line-height: 50px; font-weight: 400; color: #fff; margin-top: 50px; text-transform: uppercase; opacity: 0;}
+#portfolio_about_me_main_inbox_top h2 {width: 100%; height: 30px; font-size: 30px; line-height: 30px; font-weight: 500; padding-left: 550px; color: #fff; font-family: 'Caveat', cursive; margin-top: 50px; opacity: 0;}
+
+#portfolio_about_me_main_inbox_bottom {width: 100%; height: 270px; margin-top: 100px; overflow: hidden; opacity: 0;}
+#image_wrap {width: 30%; height: 100%; float: left; overflow: hidden;}
+#portfolio_about_me_main_inbox_bottom_img {width: 10vw; height: 10vw; position: relative; margin-top: 68px; margin-left: 1px; border-radius: 200px; border: 1px solid #fff; overflow: hidden;}
+#bg_video2 {width: 100%; height: auto; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;}
+#about_wrap {width: 70%; height: 100%; float: right;}
+#about_box {width: 100%; margin-top: 60px;}
+#about_box li{width: 90%; height: 45px; overflow: hidden; margin: auto; margin-top: 5px;}
+#about_box li h5 {float: left; font-size: 16px; line-height: 16px; color: #fff; font-weight: 300; text-transform: capitalize;}
+#about_box li h6 {float: right; font-size: 16px; line-height: 16px; color: #fff; font-weight: 300;}
+.about_value_box {width: 100%; height: 10px; background-color: #fff; clear: both; margin-top: 35px;}
+.about_value_inbox {width: 0%; height: 100%; background-color: #00ff96;}
+
+#portfolio_about_me_main_right_box {width: 420px; height: 100%; float: right; background: url(../images/bg1.jpg) center no-repeat; background-size: cover; background-color: #999; opacity: 0;}
+
+#portfolio_work {width: 100%; height: 100%; margin-top: 200px; overflow: hidden; text-align: center;}  
+#portfolio_work h2 {color: #fff; font-weight: 400; text-transform: uppercase; opacity: 0; margin-top: 100px;}
+
+#main_work {margin: auto; margin-top: 100px; overflow: hidden; opacity: 0; border: 1px solid #fff; padding: 25px;}
+#main_work>h3 {height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+#ader {width: 100%; height: 350px; background: url(../images/ader_thumbnail.png) center no-repeat; background-size: cover; box-sizing: border-box;}
+#main_work>h4 {width: 100%; height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+#main_work>p {color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300;}
+#main_work button {width: 50px; height: 50px; border: 1px solid #000; border-radius: 100px; background-color: #fff; margin-top: 20px; font-size: 16px; font-weight: 500; color: #000; transition:0.3s;}
+#main_work button:hover {background-color: #00ff96; color: #000; cursor: pointer; border: 1px solid #fff;}
+
+.javascript_protfolio {margin: auto; margin-top: 100px; border: 1px solid #fff; padding: 25px;}
+.ipad {width: 100%; height: 350px; background: url(../images/ipadapp.png) center no-repeat; background-size: cover; box-sizing: border-box;}
+.javascript_protfolio>h3 {height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+.javascript_protfolio>h4 {width: 100%; height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+.javascript_protfolio>p {color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300;}
+.javascript_protfolio button {width: 50px; height: 50px; border: 1px solid #000; border-radius: 100px; background-color: #fff; margin-top: 20px; font-size: 16px; font-weight: 500; color: #000; transition:0.3s;}
+.javascript_protfolio button:hover {background-color: #00ff96; color: #000; cursor: pointer; border: 1px solid #fff;}
+
+.apple {width: 100%; height: 350px; background: url(../images/apple_bg.png) center no-repeat; background-size: cover; box-sizing: border-box;}
+.apple>h3 {height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+.javascript_protfolio>h4 {width: 100%; height: 18px; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #fff; font-weight: 300; margin-top: 20px;}
+.javascript_protfolio>p {color: #fff; font-size: 16px; margin-top: 20px; font-weight: 300;}
+.javascript_protfolio button {width: 50px; height: 50px; border: 1px solid #000; border-radius: 100px; background-color: #fff; margin-top: 20px; font-size: 16px; font-weight: 500; color: #000; transition:0.3s;}
+.javascript_protfolio button:hover {background-color: #00ff96; color: #000; cursor: pointer; border: 1px solid #fff;}
+
+
+.language {width: 200px; background-color: #fff; margin: auto; margin-top: 50px;}
+.language>li {width: 100%; height: 40px; border-bottom: 1px solid #000; line-height: 40px;}
+.language>li:first-child {background-color: #00ff96;}
+.language>li p:hover {color: #fff; transition:0.3s; background-color: #00ff96;}
+#works_wrap {width: 100%; height: 100%; overflow: hidden; margin-top: 100px;}
+#works_menu {width: 100%; height: 30px; text-align: center; margin-top: 50px;}
+#works_menu>li {width: 200px; height: 28px; font-size: 18px; display: inline-block; line-height: 28px; vertical-align: top; color: #fff; font-weight: 400; margin-right: 10px; border: 1px solid #fff;}
+#works_menu>li:hover {cursor: pointer;}
+#works_menu>li:nth-child(1) {background-color: #00ff96; color: #000;}
+
+#responsive_work {display: block;}
+#pc_work {display: none;}
+.works {width: 45%; overflow: hidden;}
+.works:first-child {float: left;}
+.works:last-child {float: right; margin-top: 200px;}
+.works>li {width: 100%; float: left; margin-top: 100px; border: 1px solid #fff; box-sizing: border-box; padding: 25px;}
+.works>li>h4 {color: #fff; font-weight: 400; margin-top: 10px;}
+.works>li>p {color: #fff; font-weight: 300; margin: 10px 0px;}
+.works>li>a>img {width: 100%; vertical-align: top;}
+.works>li button {width: 50px; height: 50px; border: 1px solid #000; border-radius: 100px; background-color: #fff; margin-top: 20px; font-size: 16px; font-weight: 500; color: #000; transition:0.3s;}
+.works>li button:hover {background-color: #00ff96; color: #000; cursor: pointer; border: 1px solid #fff;}
+
+footer {width: 100%; height: 450px; color: #fff; overflow: hidden; position: relative;}
+#contect {width: 100px; height: 20px; overflow: hidden; position: relative;}
+#contect div{width: 0; height: 0; float: left; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-right: 18px solid transparent; border-left: 18px solid #00ff96; position: absolute; left: 0; top: 0; }
+#contect h2 {font-size: 18px; color: #fff; line-height: 20px; float: right; font-weight: 400;}
+footer h3 {font-size: 50px; font-weight: 400; line-height: 50px; margin-top: 10px;}
+#contect_list {width: 500px; height: 180px; overflow: hidden; margin-top: 30px;}
+#it_me {width: 400px; height: 100%; float: left; padding-top: 10px;}
+#it_me li {margin-top: 5px; font-weight: 300; font-size: 16px; line-height: 20px;}
+#it_me li:first-child {margin-top: 25px; margin-bottom: 10px; color: #00ff96;}
+#it_me li:last-child {line-height: 22px;}
+#sns_list {width: 100px; height: 100%; float: right; padding-top: 10px; font-size: 18px; line-height: 18px;}
+#sns_list li {margin-top: 5px; font-weight: 300; font-size: 16px; line-height: 20px;}
+#sns_list li:first-child {margin-top: 20px; margin-bottom: 10px; color: #00ff96;}
+footer h4 {font-size: 18px; line-height: 18px; margin-top: 20px; font-weight: 400; color: #00ff96;}
+footer h5 {font-size: 16px; line-height: 16px; margin-top: 10px; font-weight: 300;}
+footer p {font-size: 16px; line-height: 20px; font-weight: 300; margin-top: 20px;}
+footer h6{font-size: 16px; line-height: 16px; font-weight: 300; position: absolute; right: 0; bottom: 30px;}
+#arrow {width: 116px; height: 126px; position: absolute; right: 0; top: 0;}

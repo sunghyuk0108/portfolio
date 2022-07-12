@@ -1,0 +1,249 @@
+/* 반응형 시작 */
+/*미디어쿼리 규칙
+규칙1. 미디어쿼리에는 변화하는 값 만 기록한다.
+규칙2. 하나의 속성이 기록되면 다른 조건에도 동일하게 할당한다.
+*/
+/*미디어쿼리 스타일 시트 아래에 해당 스타일 시트 추가해서쓰면됨.*/
+@media all and (min-width:320px) { /* 320~767 모바일 */
+
+#intro_text_box {width: 100%; height: 400px; letter-spacing: 0.5vw; padding: 10px;}
+#intro_text_box p {width: 0; height: 20px; margin-top: 1px; font-size: 12px; line-height: 12px;}
+#intro_box button {width: 50px; height: 20px; right: 25px; top: 25px;}
+
+#main_page {overflow: hidden;}
+#bg_video {height: auto;}
+header{position: relative;}
+#logo {height: 20px; margin-left: 25px; margin-top: 32px;}
+#menu {margin-right: 25px;}
+#main_page_text h2 {font-size: 30px; font-weight: 400; margin-top: 200px; letter-spacing: -5px;}
+#main_page_text button {width: 100px; height: 30px; margin-top: 20px;}
+
+#brand_ader {width: 100px; height: 50px;}
+#brand_ader h2 {font-size: 14px; line-height: 14px; margin-top: 5px;}
+#brand_ader h3{font-size: 12px; line-height: 12px; margin-top: 10px;}
+
+#sns_icons {width: 95px; height: 20px; right: 15px; bottom: 50px;}
+#sns_icons li {width: 20px; height: 20px; margin-right: 5px;}
+#sns_icons img {width: 20px; height: 20px;}
+
+#menu_popup_title_text {height: 20px; font-size: 30px; margin-left: 25px; margin-top: 50px; line-height: 20px;}
+.menu_box_wrap { display: flex; flex-direction: column; justify-content: space-between;}
+#menu_li_img_box {display: none;}
+#menu_right_box {padding: 50px 25px;}
+#menu_right_box li {margin-left: unset; font-size: 24px;}
+
+#main {width: 90%; height: 100%; left: 0; right: 0; top: 0px; bottom: 0px; margin: auto; margin-top: 80px;}
+#main_wrap {width: 200px; height: 230px; margin: auto; margin-top: 250px;}
+
+#box_wrap1 { width:100px; height:100px; perspective: 400px;}
+#box_wrap1 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap2 { width:100px; height:100px; perspective: 400px;}
+#box_wrap2 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap3 { width:100px; height:100px; perspective: 400px;}
+#box_wrap3 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap4 { width:100px; height:100px; perspective: 400px;}
+#box_wrap4 div {width: 100px; height: 100px; line-height: 100px;}
+
+/*반응형 하던거 키고 하면됌 이어서 시작*/
+#promotion_img_box {width: 100%; height: auto; left: 0; right: 0; top: 0; bottom: 0; margin: auto; margin-top: 80px; overflow: scroll;}
+#promotion_text_box {display: none;}
+#promotion_img_inbox {width: 100%; height: 60%; float: none; margin-top: 20px; margin-bottom: 20px; margin-left: 0; margin-right: 0;}
+#promotion_img {width: 40%; height: 100%;}
+.promotion_img_item_box img {width: auto; height: 100%;}
+
+#promotion_review_box{width: 100%; height: 480px; float: none; margin-top: 0px; border: none; background-color: #eee;} 
+#promotion_slide_wrap {display: none;}
+.promotion_item_box_bt {display: none;}
+#inbox {display: none;}
+#promotion_review{display: none;}
+
+/* 인포메이션 시작 반응형 해당 부분 부터 이어서 하면됨 */
+#product_information {width: 100%; height: 100%;}
+
+#product_information_top {height: 160px; margin-top: 0;}
+#product_information_top h2 {text-align: center; font-size: 28px;}
+#product_information_top p {text-align: center; font-size: 16px; margin-top: 20px;}
+
+#product_information_mid {height: 100px; margin-top: 0;}
+#product_information_mid h3 {text-align: center; font-size: 24px;}
+#product_information_mid ul {height: 30px; text-align: center;}
+#product_information_mid ul li {width: 30px; height: 30px; background-color: #fff; margin-right: 15px; line-height: 30px;}
+
+#product_information_bottom {height: 220px; text-align: center; margin-top: 0;}
+#product_information_bottom h3 {text-align: center; font-size: 24px;}
+#product_information_bottom h4 {font-size: 14px; margin-top: 0; margin-top: 0;}
+#product_information_bottom h5 {width: 20px; height: 20px; line-height: 20px; background-color: #fff; font-size: 14px; margin-top: 0;}
+#product_information_bottom h6 {float: none; margin-top: 10px; font-size: 14px;} 
+/* 인포메이션 끝 */
+
+#img_slide_left_bt {background: transparent; left: -80px; top: 0; bottom: 0; margin: auto; display: block; border: none;}
+#img_slide_right_bt {background: transparent; right: -80px; top: 0; bottom: 0; margin: auto; display: block; border: none;}
+
+/*반응형 하던거 끝*/
+}
+
+@media all and (min-width:768px) { /*768~1023 태블릿*/
+
+#intro_text_box {width: 100%; height: 800px; letter-spacing: 0.5vw; padding: 20px;}
+#intro_text_box p {width: 0; height: 20px; margin-top: 20px; font-size: 18px; line-height: 18px;}
+#intro_box button {width: 100px; height: 30px; right: 25px; top: 25px;}
+
+#main_page {overflow: hidden;}
+#bg_video {height: auto;}
+header{position: relative;}
+#logo {width: 100px; height: 23px; margin-left: 50px; margin-top: 32px;}
+#menu {margin-right: 50px;}
+#main_page_text h2 {font-size: 70px; font-weight: 500; margin-top: 250px; letter-spacing: -10px;}
+#main_page_text button {width: 200px; height: 50px; margin-top: 50px;}
+
+#brand_ader {width: 150px; height: 75px;}
+#brand_ader h2 {font-size: 18px; line-height: 18px; margin-top: 15px;}
+#brand_ader h3{font-size: 14px; line-height: 14px;}
+ 
+#sns_icons {width: 115px; height: 25px; right: 15px; bottom: 50px;}
+#sns_icons li {width: 25px; height: 25px; margin-right: 5px;}
+#sns_icons img {width: 25px; height: 25px;}
+
+#menu_popup_title_text {height: 40px; font-size: 60px; margin-left: 50px; margin-top: 100px; line-height: 40px;}
+.menu_box_wrap { display: flex; flex-direction: column; justify-content: space-between;}
+#menu_li_img_box {display: none;}
+#menu_right_box {padding: 50px 50px;}
+#menu_right_box li {margin-left: unset; font-size: 24px;}
+
+#main {width: 90%; height: 100%; left: 0; right: 0; top: 0px; bottom: 0px; margin: auto; margin-top: 80px;}
+#main_wrap {width: 200px; height: 230px; margin: auto; margin-top: 250px;}
+
+#box_wrap1 { width:100px; height:100px; perspective: 400px;}
+#box_wrap1 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap2 { width:100px; height:100px; perspective: 400px;}
+#box_wrap2 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap3 { width:100px; height:100px; perspective: 400px;}
+#box_wrap3 div {width: 100px; height: 100px; line-height: 100px;}
+
+#box_wrap4 { width:100px; height:100px; perspective: 400px;}
+#box_wrap4 div {width: 100px; height: 100px; line-height: 100px;}
+
+
+/*반응형 하던거 키고 하면됌 이어서 시작*/
+#promotion_img_box {width: 100%; height: auto; left: 0; right: 0; top: 0; bottom: 0; margin: auto; margin-top: 80px; overflow: scroll;}
+#promotion_text_box {display: none;}
+#promotion_img_inbox {width: 100%; height: 70%; float: none; margin-top: 20px; margin-bottom: 20px; margin-left: 0; margin-right: 0;}
+#promotion_img {width: 50%; height: 100%;}
+.promotion_img_item_box img {width: auto; height: 100%;}
+
+#promotion_review_box{width: 100%; height: 700px; float: none; margin-top: 0px; border: none; background-color: #eee;} 
+#promotion_slide_wrap {display: none;}
+.promotion_item_box_bt {display: none;}
+#inbox {display: none;}
+#promotion_review{display: none;}
+
+/* 인포메이션 시작 반응형 해당 부분 부터 이어서 하면됨 */
+#product_information {width: 100%; height: 100%;}
+
+#product_information_top {height: 200px; margin-top: 20px;}
+#product_information_top h2 {text-align: center; font-size: 48px;}
+#product_information_top p {text-align: center; font-size: 28px; margin-top: 40px;}
+
+#product_information_mid {height: 150px; margin-top: 20px;}
+#product_information_mid h3 {text-align: center; font-size: 40px;}
+#product_information_mid ul {height: 50px; text-align: center;}
+#product_information_mid ul li {width: 50px; height: 50px; background-color: #fff; margin-right: 30px; line-height: 50px;}
+
+#product_information_bottom {height: 350px; text-align: center; margin-top: 20px;}
+#product_information_bottom h3 {text-align: center; font-size: 40px;}
+#product_information_bottom h4 {font-size: 20px; margin-top: 20px;}
+#product_information_bottom h5 {width: 50px; height: 50px; line-height: 50px; background-color: #fff; font-size: 20px; margin-top: 10px;}
+#product_information_bottom h6 {float: none; margin-top: 20px; font-size: 20px;} 
+/* 인포메이션 끝 */
+
+#img_slide_left_bt {background: transparent; left: -70px; top: 0; bottom: 0; margin: auto; display: block; border: none;}
+#img_slide_right_bt {background: transparent; right: -70px; top: 0; bottom: 0; margin: auto; display: block; border: none;}
+
+/*반응형 하던거 끝*/
+}
+@media all and (min-width:1024px) { /*1024 태블릿*/
+
+#intro_text_box {width: 1200px; height: 700px; letter-spacing: 5px; padding: 30px;}
+#intro_text_box p {width: 0; height: 25px; margin-top: 10px; font-size: 16px; line-height: 16px;}
+#intro_box button {width: 100px; height: 30px; right: 25px; top: 25px;}
+
+#main_page {overflow: hidden;}
+#bg_video {height: auto;}
+header{position: fixed;}
+#logo {width: 100px; height: 23px; margin-left: 50px; margin-top: 32px;}
+#menu {margin-right: 50px;}
+#main_page_text h2 {font-size: 120px; font-weight: 500; margin-top: 280px; letter-spacing: -20px;}
+#main_page_text button {width: 200px; height: 50px; margin-top: 50px;}
+
+#brand_ader {width: 200px; height: 100px;}
+#brand_ader h2 {font-size: 18px; line-height: 18px; margin-top: 32px;}
+#brand_ader h3{font-size: 14px; line-height: 14px;}
+
+#sns_icons {width: 115px; height: 25px; right: 50px; bottom: 50px;}
+#sns_icons li {width: 25px; height: 25px; margin-right: 5px;}
+#sns_icons img {width: 25px; height: 25px;}
+
+
+#menu_popup_title_text {height: 100px; font-size: 100px; margin-top: 150px; line-height: 100px;}
+.menu_box_wrap { display: flex; justify-content: space-around; flex-direction: row;}
+#menu_li_img_box {display: block;}
+#menu_right_box {padding: 150px 0px;}
+#menu_right_box li {margin-left: unset; font-size: 38px;}
+
+#main {width: 1620px; height: 540px; left: 50%; right: 0; top: 0; bottom: 0; margin: auto; margin-left: -810px;}
+#main_wrap {width: 200px; height: 230px; margin: auto; margin-top: 155px;}
+
+#box_wrap1 { width:100px; height:100px; perspective:400px;}
+#box_wrap1 div {width: 100px; height: 100px; line-height:100px;}
+
+#box_wrap2 { width:100px; height:100px; perspective:400px;}
+#box_wrap2 div {width: 100px; height: 100px; line-height:100px;}
+
+#box_wrap3 { width:100px; height:100px; perspective:400px;}
+#box_wrap3 div {width: 100px; height: 100px; line-height:100px;}
+
+#box_wrap4 { width:100px; height:100px; perspective:400px;}
+#box_wrap4 div {width: 100px; height: 100px; line-height:100px;}
+
+/*반응형 하던거 키고 하면됌 이어서 시작*/
+#promotion_img_box {width: 1620px; height: 100%; left: 50%; right: 0; top: 0; bottom: 0; margin: auto; margin-top: 80px; margin-left: -810px; overflow: hidden;}
+#promotion_text_box {display: block;}
+#promotion_img_inbox {width: 300px; height: 920px; float: left; margin-top: 35px; margin-left: 190px; margin-right: 0; margin-bottom: 0;}
+#promotion_img {width: 300px; height: 100%;}
+.promotion_img_item_box img {width: auto; height: 100%;}
+
+#promotion_review_box{width: 350px; height: 380px; float: right; margin-top: 150px; border: 1px solid #aaa; background-color: #fff;} 
+#promotion_slide_wrap {display: block;}
+.promotion_item_box_bt {display: block;}
+#inbox {display: block;}
+#promotion_review{display: block;}
+
+/* 인포메이션 시작 반응형 해당 부분 부터 이어서 하면됨 */
+#product_information {width: 350px; height: 100%;}
+
+#product_information_top {height: 130px; margin-top: 0;}
+#product_information_top h2 {text-align: left; font-size: 18px;}
+#product_information_top p {text-align: left; font-size: 12px; margin-top: 10px;}
+
+#product_information_mid {height: 100px; margin-top: 0;}
+#product_information_mid h3 {text-align: left; font-size: 16px;}
+#product_information_mid ul {height: 25px; text-align: left;}
+#product_information_mid ul li {width: 25px; height: 25px; background-color: #eee; margin-right: 5px; line-height: 25px; }
+
+#product_information_bottom {height: 100px; text-align: left; margin-top: 0;}
+#product_information_bottom h3 {text-align: left; font-size: 16px;}
+#product_information_bottom h4 {font-size: 16px; margin-top: 0;}
+#product_information_bottom h5 {width: 20px; height: 20px; line-height: 20px; background-color: #eee; font-size: 14px;}
+#product_information_bottom h6 {float: right; margin-top: 0px; font-size: 12px;} 
+/* 인포메이션 끝 */
+
+#img_slide_left_bt {background: transparent; left: -70px; top: 0; bottom: 0; margin: auto; display: none; border: none;}
+#img_slide_right_bt {background: transparent; right: -70px; top: 0; bottom: 0; margin: auto; display: none; border: none;}
+
+/*반응형 하던거 끝*/
+}

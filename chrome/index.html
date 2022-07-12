@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="login_box"> <!-- 로그인 -->
+        <div class="login_center">
+            <h2><a href="index.html">iPad</a></h2>
+            <form id="login_form" class="hidden">
+                <!-- 인풋의 유효성 검사를 하기 위해서는 div태그로 감싸는게 아닌 form으로 감싸야함. 또한 action="login_page.php" 이런식으로 액션 값을 주면 해당 서버로 데이터가 전송됨 '인풋 섬밋'이랑 상호작용?-->
+                <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
+                <!-- 인풋에 required를 설정하면 필수 입력 항목으로 만들 수 있음 maxlength="글자 수 제한" -->
+                <input type="submit" value="로그인" /> <!-- input 안에 있는 button 을 누르거나 type이 submit인 input을 클릭하면  -->
+            </form>
+        </div>
+    </section> <!-- 로그인 끝 -->
+    <section class="ipad_wrap"> <!-- ipad_wrap 시작 -->
+    <!-- main 아이패드 모양 -->
+    <section class="main_wrap"> <!-- main_wrap 시작 -->
+        <div class="cam_img"></div>
+        <div class="main_inbox">
+            <div class="main_inbox_bg"></div>
+            <header>
+                <h2 id="clock">00:00:00</h2>
+                <ul class="ipadicon">
+                    <li><img src="images/wifi.png" alt="wifi"></li>
+                    <li>100%</li>
+                    <li><img src="images/battery.png" alt="battery"></li>
+                </ul>
+            </header>
+        <div class="app_wrap">
+            <div class="app_box dropzone">
+                <div id="draggable" class="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+                    <div class="app" id="id_app"></div>
+                    <h3>ID</h3>
+                </div>
+            </div>
+            <div class="app_box dropzone">
+                <div class="draggable">
+                <div class="app" id="todo_app"></div>
+                <h3>TODO</h3>
+                </div>
+            </div>
+            <div class="app_box dropzone">
+                <div class="draggable">
+                <div class="app" id="quote_app"></div>
+                <h3>명언</h3>
+                </div>
+            </div>
+            <div class="app_box dropzone">
+                <div class="draggable">
+                <div class="app" id="weather_app"></div>
+                <h3>날씨</h3>
+                </div>
+            </div>
+            <div class="app_box dropzone">
+            </div>
+        </div>
+    <!-- main 아이패드 끝 -->
+
+    <!-- id 앱 -->
+    <div class="id_wrap apphidden">
+    <button class="close"><span>x</span></button>
+    <h2>ID</h2>
+    <div class="profile"><h3>편집</h3></div>
+    <h1 id="greeting" class="hidden"></h1>
+    </div>
+    <!-- id 끝 -->
+
+    <!-- todo 앱 -->
+    <div class="todo_wrap apphidden">
+        <button class="close"><span>x</span></button>
+        <h2>TODO APP</h2>
+    <form id="todo_form">
+        <input type="text" placeholder="+add to one's to-do list" required/>
+    </form>
+    <ul id="todo_list"></ul>
+    </div>
+    <!-- todo 끝 -->
+
+    <!-- 명언 앱 -->
+    <div class="quote_wrap apphidden">
+        <button class="close"><span>x</span></button>
+        <h2>명언</h2>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- 명언 끝 -->
+
+    <!-- 날씨 앱 -->
+    <div class="weather_wrap apphidden">
+        <button class="close"><span>x</span></button>
+        <h2>날씨</h2>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- 날씨 끝 -->
+
+    </div> <!-- main_inbox 끝 -->
+    </section> <!-- main_wrap 끝 -->
+    </section> <!-- ipad_wrap 끝 -->
+
+    <script src="script/greetings.js"></script>
+    <script src="script/clock.js"></script>
+    <script src="script/quotes.js"></script>
+    <script src="script/background.js"></script>
+    <script src="script/todo.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/animation.js"></script>
+</body>
+
+</html>

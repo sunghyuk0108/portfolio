@@ -1,0 +1,154 @@
+/*미디어쿼리 규칙
+규칙1. 미디어쿼리에는 변화하는 값 만 기록한다.
+규칙2. 하나의 속성이 기록되면 다른 조건에도 동일하게 할당한다.
+*/
+/*미디어쿼리 스타일 시트 아래에 해당 스타일 시트 추가해서쓰면됨.*/
+@media all and (min-width:320px) { /* 320~767 모바일 */
+header{width: 100%;}
+header h1 {margin-left: 5%;}
+nav {margin-right: 5%;}
+#sns {left: 5%;}
+#scroll_down_text {right: 5%;}
+
+#portfolio_main {width: 100%; }
+#portfolio_main_text_box {width: 100%; height: 126px;}
+#bg {width: 250px; height: 250px; border: none;}
+
+#portfolio_main_text_box h2 {font-size: 36px; line-height: 36px;}
+#portfolio_main_text_box p {font-size: 18px;}
+
+#portfolio_wrap {width: 100%;}
+#portfolio_about_me_main_box {width: 100%; height: auto; margin-top: 0px;}
+#portfolio_about_me_main_left_box {width: 100%; float: none;}
+#portfolio_about_me_main_inbox_top {height: 92px;}
+#portfolio_about_me_main_inbox_top p {height: 26px; font-size: 26px; line-height: 26px; text-align: center;}
+
+#portfolio_about_me_main_inbox_top h3 {height: 26px; font-size: 26px; line-height: 26px; padding-left: 0; text-align: center;}
+#portfolio_about_me_main_inbox_top h2 {height: 20px; font-size: 20px; line-height: 20px; padding-left: 0; text-align: center;}
+
+#portfolio_about_me_main_inbox_bottom {height: 100%; margin-top: 0px;}
+
+#image_wrap {width: 100%; float: none; padding: 10px 0px;}
+#portfolio_about_me_main_inbox_bottom_img {margin: auto; border: none;}
+#about_wrap {width: 100%; float: none;}
+#about_box {margin-top: 0;}
+#portfolio_about_me_main_right_box {display: none;}
+
+#portfolio_work {margin-top: 100px;}
+#portfolio_work h2 {font-size: 26px; line-height: 26px;}
+
+#main_work {width: 80%;}
+.javascript_protfolio {width: 80%;}
+#works_wrap {width: 90%; margin: auto; margin-top: 50px;}
+
+#works_menu>li {width: 40%; margin-right: 0px;}
+.works {width: 100%;}
+.works:nth-child(2) {float: none;}
+.works:last-child {float: none; margin-top: 0px;}
+
+footer {width: 90%; height: 100%; margin: auto; padding: 50px 0px;}
+#contect_list {width: 100%; height: unset; margin-top: 20px;}
+#it_me {width: 100%; height: unset; float: none; padding: 0px;}
+#sns_list {width: 100%; height: unset; float: none; padding: 0;}
+footer h6 {display: none; bottom: 0;}
+#it_me li:first-child {margin-top: 0px;}
+#arrow {display: none; top: 0;}
+}
+@media all and (min-width:768px) { /*768~1023 태블릿*/
+header{width: 100%;}
+header h1 {margin-left: 5%;}
+nav {margin-right: 5%;}
+#sns {left: 5%;}
+#scroll_down_text {right: 5%;}
+
+#portfolio_main {width: 100%;}
+#portfolio_main_text_box {width: 100%; height: 228px;}
+#bg {width: 400px; height: 400px; border: none;}
+
+#portfolio_main_text_box h2 {font-size: 70px; line-height: 70px;}
+#portfolio_main_text_box p {font-size: 18px;}
+
+#portfolio_wrap {width: 100%;}
+#portfolio_about_me_main_box {width: 100%; height: auto; margin-top: 0px;}
+#portfolio_about_me_main_left_box {width: 100%; float: none;}
+#portfolio_about_me_main_inbox_top {height: 122px;}
+#portfolio_about_me_main_inbox_top p {height: 36px; font-size: 36px; line-height: 36px; text-align: center;}
+#portfolio_about_me_main_inbox_top h3 {height: 36px; font-size: 36px; line-height: 36px; padding-left: 0; text-align: center;}
+#portfolio_about_me_main_inbox_top h2 {height: 30px; font-size: 30px; line-height: 30px; padding-left: 0; text-align: center;}
+
+#portfolio_about_me_main_inbox_bottom {height: 100%; margin-top: 0px;}
+#image_wrap {width: 100%; float: none; padding: 20px 0px;}
+#portfolio_about_me_main_inbox_bottom_img {margin: auto; border: none;}
+#about_wrap {width: 100%; float: none;}
+#about_box {margin-top: 0;}
+#portfolio_about_me_main_right_box {display: none;}
+
+#portfolio_work {margin-top: 100px;}
+#portfolio_work h2 {font-size: 26px; line-height: 26px;}
+
+#main_work {width: 85%;}
+.javascript_protfolio {width: 85%;}
+#works_wrap {width: 90%; margin: auto; margin-top: 50px;}
+
+#works_menu>li {width: 200px;; margin-right: 10px;}
+.works {width: 45%;}
+.works:nth-child(2) {float: left;}
+.works:last-child {float: right; margin-top: 200px;}
+
+footer {width: 90%; height: 100%; margin: auto; padding: 50px 0px;}
+#contect_list {width: 100%; height: unset; margin-top: 20px;}
+#it_me {width: 100%; height: unset; float: none;}
+#sns_list {width: 100%; height: unset; float: none; padding: 0;}
+footer h6 {display: block; bottom: 50px;}
+#it_me li:first-child {margin-top: 0px;}
+#arrow {display: block; top: 50px;}
+}
+@media all and (min-width:1024px) { /*1024 태블릿*/
+header{width: 75%;}
+header h1 {margin-left: 0;}
+nav {margin-right: 0;}
+#sns {left: 0%;}
+#scroll_down_text {right: 0%;}
+
+#portfolio_main {width: 75%;}
+#portfolio_main_text_box {width: 100%; height: 17vw;}
+#bg {width: 30vw; height: 30vw; border: 1px solid #fff;}
+
+#portfolio_main_text_box h2 {font-size: 5vw; line-height: 5vw;}
+#portfolio_main_text_box p {font-size: 1vw;}
+
+#portfolio_wrap {width: 75%;}
+#portfolio_about_me_main_box {width: 100%; height: 640px; margin-top: 150px;}
+#portfolio_about_me_main_left_box {width: 70%; float: left;}
+#portfolio_about_me_main_inbox_top {height: 270px;}
+#portfolio_about_me_main_inbox_top p {height: 50px; font-size: 3vw; line-height: 50px; text-align: left;}
+#portfolio_about_me_main_inbox_top h3 {height: 50px; font-size: 3vw; line-height: 50px; padding-left: 15%; text-align: left;}
+#portfolio_about_me_main_inbox_top h2 {height: 30px; font-size: 2vw; line-height: 30px; padding-left: 60%; text-align: left;}
+
+#portfolio_about_me_main_inbox_bottom {height: 100%; margin-top: 100px;}
+#image_wrap {width: 30%; float: left; padding: 0px 0px;}
+#portfolio_about_me_main_inbox_bottom_img {margin-top: 68px; margin-left: 1px; border: 1px solid #fff;}
+#about_wrap {width: 70%; float: right;}
+#about_box {margin-top: 60px;}
+#portfolio_about_me_main_right_box {width: 30%; display: block;}
+
+#portfolio_work {margin-top: 200px;}
+#portfolio_work h2 {font-size: 3vw; line-height: 50px;}
+
+#main_work {width: 600px;}
+.javascript_protfolio {width: 600px;}
+#works_wrap {width: 100%; margin: auto; margin-top: 100px;}
+
+#works_menu>li {width: 200px;; margin-right: 10px;}
+.works {width: 45%;}
+.works:nth-child(2) {float: left;}
+.works:last-child {float: right; margin-top: 200px;}
+
+footer {width: 100%; height: 450px; margin-top: 200px; padding: 0px 0px;}
+#contect_list {width: 500px; height: 180px; margin-top: 30px;}
+#it_me {width: 400px; height: 100%; float: left;}
+#sns_list {width: 100px; height: 100%; float: right; padding-top: 10px;}
+footer h6 {display: block; bottom: 30px;}
+#it_me li:first-child {margin-top: 25px;}
+#arrow {display: block; top: 0px;}
+}

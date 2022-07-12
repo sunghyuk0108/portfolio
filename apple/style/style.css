@@ -1,0 +1,143 @@
+    *{margin: 0; padding: 0; list-style: none;}
+    a {text-decoration: none; color: inherit;}
+    html,body{height: 100%;}
+    /* header 시작 */
+    header {width: 100%; height: 44px; background: rgba(0,0,0,0.8); position: fixed; top: 0; left: 0; z-index: 9999; overflow: hidden;}
+    .header_inbox {width: 960px; height: 44px; margin: auto;}
+    .logo {height: 100%; padding: 0px 8px; background: url(../images/globalnav_apple_image__b5er5ngrzxqq_large.svg) center no-repeat; float: left;}
+    nav {width: 100%; height: 44px;} 
+    .menu {width: 100%; display: flex; justify-content: space-between;}
+    .menu li {padding: 0px 8px; line-height: 44px; font-size: 12px; text-align: center; color: #f5f5f7; opacity: 0.8; transition: 0.5s;} 
+    .menu li:hover {opacity: 1; cursor: pointer;}
+    .search {padding: 0px 8px; background: url(../images/globalnav_search_image__cbllq1gkias2_large.svg) center 0 no-repeat;}
+    nav input{width: 60%; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; border: none; background-color: transparent; display: none;}
+    .baguni {background: url(../images/globalnav_bag_image__yzte50i47ciu_large.svg) center center no-repeat;}
+    /* header 끝 */
+
+    /* media 전용 css */
+    .media_header_wrap {width: 100%; height: 48px; text-align: center; display: none;}
+    .media_nav {width: 14px; height: 8px; overflow: hidden; margin-top: 21px; margin-left: 20px; float: left;}
+
+    .media_nav li {width: 100%; height: 1px; background-color: #fff;}
+
+    .media_nav li:last-child {margin-top: 6px;}
+
+    .media_logo {width: 50px; height: 100%;}
+
+    .media_baguni {width: 16px; height: 100%; float: right; margin-right: 20px;}
+    /* media 전용 css */
+
+    /* header2 시작 */
+    .header_two {width: 100%; height: 44px; background-color: #eee; text-align: center; margin-top: 44px; position: relative; z-index: 9998;}
+    .header_two h3 {font-size: 12px; font-weight: 400; line-height: 44px; }
+    .header_two h3 span {color: #2997ff;} 
+    /* header2 끝 */
+    
+    /* first 컨텐츠 시작 */
+    .content {width: 100%; text-align: center; overflow: hidden; background-color: #fff;}
+    .content h2 {margin-top: 50px; font-size: 60px; font-weight: 500; line-height: 50px;}
+    .content h3 {margin-top: 15px; font-size: 26px; font-weight: 400; line-height: 26px;}
+    .content_cho {margin-top: 15px;}
+    .content_cho>div {display: inline-block; margin: 0px 15px;}
+    .content_cho>div>span {color: #0066cc; font-size: 20px; line-height: 20px;}
+
+    .content_box2 {width: 100%; height: 500px; background: url(../images/hero_iphone13pro_avail__iy77cld0zwii_largetall_2x.jpg) center -250px no-repeat; background-size: 3000px 736px;}
+    /* apple 사이트와 동일하게 적용하기 위해 background-size를 가로 3000 세로 736 값을 줌 */
+    
+    /* first 컨텐츠 끝 */
+
+    /* main 시작 */
+    .main1 {width: 100%; height: 500px; text-align: center; overflow: hidden; background: url(../images/hero_iphone_13pro__dhnsegysa42u_large_2x.jpeg) center center no-repeat; background-size: cover; margin-top: 10px;}
+    .main1 h2 {margin-top: 50px; font-size: 60px; font-weight: 500; line-height: 50px;}
+    .main1 h3 {margin-top: 15px; font-size: 26px; font-weight: 400; line-height: 26px;}
+    .main1_cho {margin-top: 15px;}
+    .main1_cho>div {display: inline-block; margin: 0px 15px;}
+    .main1_cho>div>span {color: #0066cc; font-size: 20px; line-height: 20px;}
+    /* .main2에 아래 코드만 입력함 */
+    .main2 {width: 100%; height: 500px; text-align: center; overflow: hidden; background: url(../images/hero_iphone_13__f194u1rdooeq_large_2x.jpeg) center center no-repeat; background-size: cover; margin-top: 10px;}
+    .main2 h2 {color: #fff; margin-top: 50px; font-size: 60px; font-weight: 500; line-height: 50px;}
+    .main2 h3 {color: #fec2eb; margin-top: 15px; font-size: 26px; font-weight: 400; line-height: 26px;}
+    /* main 끝 */
+
+    /* display:grid; 적용해 봄  grid-template-rows: repeat(숫자(세로 열의 갯수), 자식의 높이값? ) grid-template-columns: repeat(숫자(가로 행의 갯수), 자식의 넓이값? ) */
+    /* 애플 제품 콘텐츠 리스트 시작 */
+    .container_wrap {width: 100%; padding: 10px; box-sizing: border-box;}
+    /* .container1 한번 더 감싸서 p10px 값을 주고 bxz:bb값을 줘서 간격은 p10으로 일정하게 보이게 지정함. */
+    .container1 {width: 100%;  display: grid; grid-template-rows: repeat(3, 600px); grid-template-columns: repeat(2, 1fr); gap: 10px; text-align: center;}
+    /* grid-template-columns: repeat(2, 1fr); <- 1fr값을 주면 2개의 행으로 비율을 일정하게 만들 수 있음 */
+    .container1 article .article_inbox {width: 100%; height: 100%; background-color: #fff; overflow: hidden;}
+    .container1 article:nth-child(1) .article_inbox {background: url(../images/content1.jpg) center no-repeat; background-size: cover;}
+    .container1 article:nth-child(2) .article_inbox {background: url(../images/content2.jpg) center no-repeat; background-size: cover;}
+    .container1 article:nth-child(3) .article_inbox {background: url(../images/content3.jpg) center no-repeat; background-size: cover;}
+    .container1 article:nth-child(4) .article_inbox {background: url(../images/content4.jpg) center no-repeat; background-size: cover;}
+    .container1 article:nth-child(5) .article_inbox {background: url(../images/content5.jpg) center no-repeat; background-size: cover;}
+    .container1 article:nth-child(6) .article_inbox {background: url(../images/content6.jpg) center no-repeat; background-size: cover;}
+
+    /* 아티클 1 시작 */
+    .container1 article:nth-child(1) .article_inbox h3{color: #fff; margin-top: 450px; font-size: 30px; font-weight: 700;}
+    .container1 article:nth-child(1) .article_inbox h4{color: #fff; font-size: 20px; font-weight: 400; margin-top: 10px;}
+    .container1 article:nth-child(1) .article_inbox .article_cho{ margin-top: 10px;}
+    .container1 article:nth-child(1) .article_inbox .article_findout{color: #06c;}
+    /* 아티클 1 끝 */
+
+    /* 아티클 2 시작 */
+    .container1 article:nth-child(2) .article_inbox h5 {margin-top: 25px; font-weight: 400; font-size: 14px;}
+    .container1 article:nth-child(2) .article_inbox img {width: 150px; margin-top: 10px;}
+    .container1 article:nth-child(2) .article_inbox h4 {margin-top: 10px; font-weight: 400; font-size: 20px;}
+    .container1 article:nth-child(2) .article_inbox .article_cho {margin-top: 10px;}
+    .container1 article:nth-child(2) .article_inbox .article_cho div {display: inline-block; margin: 0px 10px; color: #06c;}
+     /* 아티클 2 끝 */
+
+    /* 아티클 3 시작 */
+    .container1 article:nth-child(3) .article_inbox h3 {margin-top: 450px; font-size: 30px; font-weight: 700;}
+    .container1 article:nth-child(3) .article_inbox h4 {margin-top: 10px; font-weight: 400; font-size: 20px;}
+    .container1 article:nth-child(3) .article_inbox .article_cho {margin-top: 10px;}
+    .container1 article:nth-child(3) .article_inbox .article_cho div {display: inline-block; margin: 0px 10px; color: #06c;}
+    /* 아티클 3 끝 */
+
+    /* 아티클 4 시작 */
+    .container1 article:nth-child(4) .article_inbox h5 {margin-top: 25px; font-size: 20px; font-weight: 500;}
+    .container1 article:nth-child(4) .article_inbox h3 {margin-top: 10px; font-size: 30px; font-weight: 700;}
+    .container1 article:nth-child(4) .article_inbox h4 {margin-top: 10px; font-size: 20px; font-weight: 400;}
+    .container1 article:nth-child(4) .article_inbox .article_cho {margin-top: 10px;}
+    .container1 article:nth-child(4) .article_inbox .cho_join {color: #06c;}
+    /* 아티클 4 끝 */
+
+    /* 아티클 5 시작 */
+    .container1 article:nth-child(5) .article_inbox h5 {margin-top: 25px; font-size: 14px; font-weight: 400;}
+    .container1 article:nth-child(5) .article_inbox h3 {margin-top: 10px; font-size: 30px; font-weight: 700;}
+    .container1 article:nth-child(5) .article_inbox .article_cho {margin-top: 10px;}
+    .container1 article:nth-child(5) .article_inbox .article_cho div {display: inline-block; color: #06c;}
+    /* 아티클 5 끝 */
+
+    /* 아티클 6 시작 */
+    .container1 article:nth-child(6) .article_inbox img {width: 80px;margin-top: 450px;}
+    .container1 article:nth-child(6) .article_inbox h3 {margin-top: 10px; font-weight: 400; font-size: 20px; color: #fff;} 
+    .container1 article:nth-child(6) .article_inbox .article_cho {margin-top: 10px;} 
+    .container1 article:nth-child(6) .article_inbox .article_cho div {display: inline-block; color: #06c; margin: 0px 10px;} 
+    /* 아티클 6 끝 */
+    /* 애플 제품 콘텐츠 리스트 끝 */
+
+    footer {background-color: #f5f5f7; margin: auto; overflow: hidden;}
+    .footer_wrap {max-width: 960px; margin: auto;}
+    .notice {margin: auto; border-bottom: 1px solid #d2d2d7; padding: 15px 0px;}
+    .notice h5 {font-size: 12px; font-weight: 400; color: #626273;} 
+
+    .footer_list {overflow: hidden; padding: 15px 0px;}
+    .footer_list article {width: 20%; height: 100%; float: left;}
+    .footer_list_section h2 {font-size: 12px; color: #1d1d1f; font-weight: 600;}
+    .footer_list_section {margin-top: 10px;}
+    .footer_list_section ul li {font-size: 12px; font-weight: 400; margin-top: 10px; color: #6e6e73;}
+
+    .last_footer {margin: auto; margin-top: 10px;}
+    .last_footer p {font-size: 12px; padding: 10px 0px; border-bottom: 1px solid #d2d2d7; color: #6e6e73;}
+    .last_footer_mid {padding: 10px 0px;}
+    .last_footer span {color: #06c;}
+    .last_footer h3 {font-size: 12px; font-weight: 400; float: left; margin-right: 50px; color: #6e6e73; line-height: 14px;}
+    .last_footer h4 {font-size: 12px; font-weight: 400; float: right; color: #424245; line-height: 14px;}
+    .policy {float: left;}
+    .policy li {color: #424245; font-size: 12px; font-weight: 400; float: left;}
+    .policy li span {padding: 0px 5px; font-size: 12px; color: #d2d2d7; line-height: 12px;}
+    .last_footer_bottom {margin-top: 10px; margin-bottom:20px; overflow: hidden;}
+    .last_footer_bottom li {float: left; font-size: 10px; font-weight: 300; color: #6e6e73;}
+    .last_footer_bottom li span {color: #d2d2d7; font-size: 12px; padding: 0px 5px; line-height: 12px;}
